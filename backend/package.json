@@ -1,0 +1,15 @@
+{
+    "name": "mi-tienda-en-linea",
+    "version": "1.0.0",
+    "description": "Tienda en línea construida con Node.js",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "bcrypt": "^5.1.1",
+        "express": "^4.21.1",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^6.3.2"
+    }
+}
