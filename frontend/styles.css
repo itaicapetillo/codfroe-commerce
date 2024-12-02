@@ -1,0 +1,238 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a69485;
+}
+
+/* Sección Principal */
+main {
+    padding: 40px;
+}
+
+/* Sección de Búsqueda */
+.search-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.search-section form {
+    display: flex;
+    flex-direction: column; /* Responsivo */
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-section input {
+    padding: 10px 35px 10px 15px; /* espacio para el icono */
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: url('lupa.png'); /* Cambia 'lupa.png' por la imagen de la lupa */
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #bfb5aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.search-section button:hover {
+    background-color: #a69485;
+}
+
+/* Sección de Datos */
+.data-section {
+    margin-top: 40px;
+}
+
+.data-section h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.data-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-row {
+    display: flex;
+    background-color: #bfb5aa;
+    padding: 10px;
+    color: white;
+}
+
+.header-item {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.data-rows {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Formulario para Agregar Datos */
+.add-data {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.add-data h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-data form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.add-data input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-data button {
+    padding: 10px 20px;
+    background-color: #bfb5aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.add-data button:hover {
+    background-color: #a69485;
+}
+
+/* Estilos Responsivos */
+@media (min-width: 768px) {
+    .search-section form {
+        flex-direction: row; /* Cambia de columna a fila en pantallas más grandes */
+    }
+
+    .add-data form {
+        flex-direction: row;
+    }
+
+    .search-section input {
+        padding: 10px 20px;
+    }
+}
+
+/* login.html estilos */
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f5f2;
+}
+
+.login-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-section input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-section button {
+    padding: 10px 20px;
+    background-color: #bfb5aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-section button:hover {
+    background-color: #a69485;
+}
